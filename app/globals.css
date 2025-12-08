@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;550;599;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.progressive-blur-mask {
+  width: 100%;
+  background-color: #f7f7f7;
+  opacity: calc(var(--blur) / 11);
+  filter: blur(calc(var(--blur) * 1px));
+  mask-image: linear-gradient(to bottom, transparent, black);
+}
+
+.progressive-blur-mask-features {
+  width: 100%;
+  height: 35px;
+  background-color: #1c1c1c;
+  opacity: calc(var(--blur) / 11);
+  filter: blur(calc(var(--blur) * 1px));
+  mask-image: linear-gradient(to bottom, transparent, black);
+}
+
+.bleed-border-b {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.bleed-border-t {
+  border-top: 1px solid #e5e5e5;
+}
+
+.bleed-ln-gray-200 {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
