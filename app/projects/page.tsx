@@ -1,50 +1,69 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 
-const ProjectCard = ({ title, image }) => (
-  <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300">
-    <div className="aspect-video w-full overflow-hidden bg-gray-100">
-      <img
-        src={image}
-        alt={title}
-        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-      />
+const ProjectCard = ({ title, image, priority = false, index = 0 }) => {
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, index * 150);
+    return () => clearTimeout(timer);
+  }, [index]);
+
+  return (
+    <div
+      className={`group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-500 transform ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+      }`}
+    >
+      <div className="aspect-video w-full overflow-hidden bg-gray-100 relative">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          priority={priority}
+          className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 const ProjectsPage = () => {
   const projects = [
     {
       title: "ProjectSync",
       description: "A comprehensive project management platform designed to streamline team collaboration and boost productivity. Features real-time updates, task tracking, and intuitive workflow management.",
-      image: "/project_sync.png",
+      image: "/projectsync1.png",
       tags: ["Web App", "Collaboration", "SaaS"]
     },
     {
       title: "MusicFlow",
       description: "Modern music streaming application with personalized playlists, social features, and high-quality audio playback. Built for music lovers who want a seamless listening experience.",
-      image: "/musicflow.png",
+      image: "/music1.jpg",
       tags: ["Mobile", "Entertainment", "Audio"]
     },
     {
       title: "TalentMind",
       description: "AI-powered recruitment platform that connects top talent with leading companies. Features intelligent matching, automated screening, and comprehensive candidate management.",
-      image: "/talentmind.png",
+      image: "/talentmind.jpg",
       tags: ["Web App", "AI", "HR Tech"]
     },
     {
       title: "CollabHub",
       description: "Real-time collaboration workspace for distributed teams. Includes video conferencing, document sharing, and project management tools all in one seamless platform.",
-      image: "/collb.png",
+      image: "/collab1.jpg",
       tags: ["Web App", "Collaboration", "Remote Work"]
     },
     {
       title: "Analytics Dashboard",
       description: "Powerful business intelligence dashboard with real-time data visualization, custom reporting, and actionable insights. Helps teams make data-driven decisions faster.",
-      image: "/dashboard.png",
+      image: "/dashboard1.jpg",
       tags: ["Web App", "Analytics", "Business Intelligence"]
     }
   ];
@@ -64,8 +83,8 @@ const ProjectsPage = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
+          {projects.map((project, idx) => (
+            <ProjectCard key={idx} {...project} priority={idx === 0} index={idx} />
           ))}
         </div>
 
