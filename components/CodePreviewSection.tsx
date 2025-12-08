@@ -27,8 +27,14 @@ const projects = [
     image: '/collab1.jpg',
     description: 'Real-time collaboration'
   },
-  {
+    {
     id: 5,
+    title: 'CRM Dashboard',
+    image: '/Hero Section@3x.png',
+    description: 'Real-time collaboration'
+  },
+  {
+    id: 6,
     title: 'Analytics Dashboard',
     image: '/dashboard1.jpg',
     description: 'Business intelligence'
