@@ -42,6 +42,12 @@ const ProjectsPage = () => {
       image: "/projectsync1.png",
       tags: ["Web App", "Collaboration", "SaaS"]
     },
+     {
+      title: "CRMDashbpard",
+      description: "A comprehensive project management platform designed to streamline team collaboration and boost productivity. Features real-time updates, task tracking, and intuitive workflow management.",
+      image: "/Hero Section@3x.png",
+      tags: ["Web App", "Collaboration", "SaaS"]
+    },
     {
       title: "MusicFlow",
       description: "Modern music streaming application with personalized playlists, social features, and high-quality audio playback. Built for music lovers who want a seamless listening experience.",
