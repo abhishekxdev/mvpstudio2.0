@@ -5,42 +5,42 @@ import React from 'react';
 const testimonials = [
   {
     name: "Sarah Chen",
-    role: "Founder, HealthTech Startup",
+    role: "Founder, ProjectSync",
     image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200",
     content: "MVP Studio turned our idea into a fully functional product in just 3 weeks. The quality exceeded our expectations and we were able to secure our first round of funding based on their work.",
     rating: 5
   },
   {
     name: "Michael Rodriguez",
-    role: "CEO, FinanceFlow",
+    role: "CEO, RDMS ",
     image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200",
     content: "Working with MVP Studio was a game-changer. They understood our vision immediately and delivered a production-ready MVP that our users love. Highly recommend for any founder looking to move fast.",
     rating: 5
   },
   {
     name: "Emily Thompson",
-    role: "Co-founder, EduLearn",
+    role: "Co-founder, CollabPro",
     image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200",
     content: "The team's expertise in rapid development is unmatched. They helped us validate our idea quickly and iterate based on real user feedback. Best investment we made for our startup.",
     rating: 5
   },
   {
     name: "David Park",
-    role: "Founder, MarketPlace Pro",
+    role: "Founder, Behaveme",
     image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=200",
     content: "From concept to launch in 21 days. The MVP Studio team is professional, responsive, and delivered exactly what we needed to start acquiring customers. Their process is simply brilliant.",
     rating: 5
   },
   {
     name: "Jessica Williams",
-    role: "Product Manager, SocialHub",
+    role: "Product Manager, CRMPro",
     image: "https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=200",
     content: "Incredible attention to detail and commitment to our success. They didn't just build our MVP, they became true partners in bringing our vision to life. Could not be happier with the results.",
     rating: 5
   },
   {
     name: "Alex Kumar",
-    role: "Founder, CloudSync",
+    role: "Founder, MistAI",
     image: "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=200",
     content: "MVP Studio helped us go from idea to paying customers faster than we thought possible. Their technical expertise and understanding of startup needs is exceptional.",
     rating: 5
