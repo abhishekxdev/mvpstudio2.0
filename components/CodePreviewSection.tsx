@@ -6,31 +6,31 @@ const projects = [
   {
     id: 1,
     title: 'ProjectSync',
-    image: '/project_sync.png',
+    image: '/projectsync1.png',
     description: 'Streamline team collaboration'
   },
   {
     id: 2,
     title: 'MusicFlow',
-    image: '/musicflow.png',
+    image: '/music1.jpg',
     description: 'Personalized music streaming'
   },
   {
     id: 3,
     title: 'TalentMind',
-    image: '/talentmind.png',
+    image: '/talentmind.jpg',
     description: 'AI-powered recruitment'
   },
   {
     id: 4,
     title: 'CollabHub',
-    image: '/collb.png',
+    image: '/collab1.jpg',
     description: 'Real-time collaboration'
   },
   {
     id: 5,
     title: 'Analytics Dashboard',
-    image: '/dashboard.png',
+    image: '/dashboard1.jpg',
     description: 'Business intelligence'
   }
 ];
@@ -70,7 +70,9 @@ const CodePreviewSection = () => {
               <img
                 src={projects[currentIndex].image}
                 alt={projects[currentIndex].title}
-                className={`w-full h-full object-cover transition-opacity duration-500 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}
+                className={`w-full h-full object-cover transition-all duration-700 ease-in-out ${
+                  isTransitioning ? 'opacity-0 scale-105 blur-sm' : 'opacity-100 scale-100 blur-0'
+                }`}
               />
            </div>
         </div>
@@ -82,7 +84,9 @@ const CodePreviewSection = () => {
                  <img
                    src={projects[currentIndex].image}
                    alt={projects[currentIndex].title}
-                   className={`w-full h-full object-cover transition-opacity duration-500 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}
+                   className={`w-full h-full object-cover transition-all duration-700 ease-in-out ${
+                     isTransitioning ? 'opacity-0 scale-105 blur-sm' : 'opacity-100 scale-100 blur-0'
+                   }`}
                  />
               </div>
            </div>
