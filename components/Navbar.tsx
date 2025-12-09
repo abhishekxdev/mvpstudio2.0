@@ -22,7 +22,7 @@ const Navbar = () => {
               <a className="text-ln-label-sm text-ln-gray-600 transition duration-200 ease-linear hover:text-ln-gray-800" href="/projects">Projects</a>
               <a className="text-ln-label-sm text-ln-gray-600 transition duration-200 ease-linear hover:text-ln-gray-800" href="/#pricing">Plans</a>
               <a className="text-ln-label-sm text-ln-gray-600 transition duration-200 ease-linear hover:text-ln-gray-800" href="/#testimonials">Testimonials</a>
-              <a className="text-ln-label-sm text-ln-gray-600 transition duration-200 ease-linear hover:text-ln-gray-800" href="/#newsletter">Contact</a>
+              
             </nav>
 
             <div className="hidden items-center gap-4 lg:flex">
