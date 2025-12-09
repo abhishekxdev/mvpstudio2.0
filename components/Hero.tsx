@@ -66,12 +66,10 @@ const Hero = () => {
 
         {/* CTA */}
         <div className="mt-6 md:mt-8 flex flex-col items-center justify-center sm:flex-row w-full sm:w-auto gap-3 sm:px-0 max-w-2xl mx-auto">
-          <a className="group relative inline-flex items-center justify-center whitespace-nowrap transition duration-200 ease-out outline-none focus:outline-none disabled:pointer-events-none bg-black text-white shadow-lg hover:bg-black/90 disabled:bg-ln-gray-25 disabled:text-ln-gray-450 disabled:shadow-none h-11 gap-2 sm:gap-3.5 rounded-[13px] px-[18px] text-ln-label-sm w-full sm:w-auto max-w-md" href="https://calendly.com/mvpstudio-in/30min" target="_blank" rel="noopener noreferrer">
-            <span className="flex items-center gap-1 text-center justify-center w-full sm:w-auto">
-              <span>Book A Call</span>
-              <span className="hidden sm:inline text-ln-paragraph-sm text-white/70">-</span>
-              <span className="hidden sm:inline text-ln-paragraph-sm text-white/80">Let's Build Your MVP</span>
-            </span>
+          <a className="group relative inline-flex items-center justify-center whitespace-nowrap transition duration-200 ease-out outline-none focus:outline-none disabled:pointer-events-none bg-black text-white shadow-lg hover:bg-black/90 disabled:bg-ln-gray-25 disabled:text-ln-gray-450 disabled:shadow-none h-11 gap-2 sm:gap-3.5 rounded-[13px] px-[18px] text-ln-label-sm w-full sm:w-auto max-w-md touch-manipulation" href="https://calendly.com/mvpstudio-in/30min" target="_blank" rel="noopener noreferrer">
+            <span>Book A Call</span>
+            <span className="hidden sm:inline text-ln-paragraph-sm text-white/70">-</span>
+            <span className="hidden sm:inline text-ln-paragraph-sm text-white/80">Let's Build Your MVP</span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" className="-mx-1.5 size-5 shrink-0 text-white/80 group-disabled:text-ln-gray-450">
               <path stroke="currentColor" strokeLinecap="square" strokeWidth="1.25" d="M8.333 13.333 11.667 10 8.333 6.667"></path>
             </svg>
