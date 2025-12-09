@@ -18,7 +18,9 @@ const Footer = () => {
           </div>
           <div className="flex items-center justify-center">
             <a
-              href="#contact"
+              href="https://calendly.com/mvpstudio-in/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-ln-gray-900 px-6 py-3 text-ln-label-md text-white transition-all duration-200 hover:bg-ln-gray-800 hover:shadow-lg"
             >
               Book A Call
@@ -30,7 +32,7 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center pb-8 pt-6 xl:pt-6 border-t border-ln-gray-200">
-           <p className="text-center text-ln-paragraph-sm text-ln-gray-500">© 2026 MVP Studio. All rights reserved.</p>
+           <p className="text-center text-ln-paragraph-sm text-ln-gray-500">© 2025 MVP Studio. All rights reserved.</p>
         </div>
       </footer>
     </div>
