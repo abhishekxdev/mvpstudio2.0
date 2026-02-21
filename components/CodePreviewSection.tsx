@@ -6,79 +6,68 @@ const projects = [
   {
     id: 1,
     title: 'ProjectSync',
-    image: '/projectsync1.png',
+    image: '/project1.png',
     description: 'Streamline team collaboration'
   },
   {
     id: 2,
-    title: 'MusicFlow',
-    image: '/music1.jpg',
-    description: 'Personalized music streaming'
+    title: 'CRM Dashboard',
+    image: '/project2.png',
+    description: 'Comprehensive CRM platform'
   },
   {
     id: 3,
-    title: 'TalentMind',
-    image: '/talentmind.jpg',
-    description: 'AI-powered recruitment'
+    title: 'MusicFlow',
+    image: '/project3.png',
+    description: 'Personalized music streaming'
   },
   {
     id: 4,
-    title: 'CollabHub',
-    image: '/collab1.jpg',
-    description: 'Real-time collaboration'
+    title: 'TalentMind',
+    image: '/project4.png',
+    description: 'AI-powered recruitment'
   },
-    {
+  {
     id: 5,
-    title: 'CRM Dashboard',
-    image: '/Hero Section@3x.png',
+    title: 'CollabHub',
+    image: '/project5.png',
     description: 'Real-time collaboration'
   },
   {
     id: 6,
     title: 'Analytics Dashboard',
-    image: '/dashboard1.jpg',
+    image: '/project6.png',
     description: 'Business intelligence'
+  },
+  {
+    id: 7,
+    title: 'FinTrack',
+    image: '/project7.png',
+    description: 'Smart financial tracking'
   }
 ];
 
 const CodePreviewSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsTransitioning(true);
-      setTimeout(() => {
-        setCurrentIndex((prev) => (prev + 1) % projects.length);
-        setIsTransitioning(false);
-      }, 500);
+      setCurrentIndex((prev) => (prev + 1) % projects.length);
     }, 4000);
 
     return () => clearInterval(interval);
   }, []);
-
-  const goToSlide = (index: number) => {
-    if (index !== currentIndex && !isTransitioning) {
-      setIsTransitioning(true);
-      setTimeout(() => {
-        setCurrentIndex(index);
-        setIsTransitioning(false);
-      }, 500);
-    }
-  };
 
   return (
     <div className="container mx-auto pt-11 xl:pt-20">
       <div className="flex justify-center items-center mx-auto px-4">
         {/* Mobile View */}
         <div className="flex flex-col overflow-hidden p-px xl:hidden w-full max-w-4xl">
-           <div className="relative aspect-video origin-bottom flex-col rounded-20 bg-ln-gray-50 ring-1 ring-ln-gray-200 overflow-hidden">
+           <div className="relative origin-bottom flex-col rounded-20 bg-ln-gray-50 ring-1 ring-ln-gray-200 overflow-hidden">
               <img
                 src={projects[currentIndex].image}
                 alt={projects[currentIndex].title}
-                className={`w-full h-full object-cover transition-all duration-700 ease-in-out ${
-                  isTransitioning ? 'opacity-0 scale-105 blur-sm' : 'opacity-100 scale-100 blur-0'
-                }`}
+                className="w-full h-auto block"
               />
            </div>
         </div>
@@ -86,13 +75,11 @@ const CodePreviewSection = () => {
         {/* Desktop View */}
         <div className="relative hidden xl:block w-full max-w-6xl mx-auto">
            <div className="w-full rounded-20 bg-ln-gray-25 ring-1 ring-ln-gray-200 xl:rounded-[28px] overflow-hidden">
-              <div className="relative aspect-video bg-ln-gray-900">
+              <div className="relative">
                  <img
                    src={projects[currentIndex].image}
                    alt={projects[currentIndex].title}
-                   className={`w-full h-full object-cover transition-all duration-700 ease-in-out ${
-                     isTransitioning ? 'opacity-0 scale-105 blur-sm' : 'opacity-100 scale-100 blur-0'
-                   }`}
+                   className="w-full h-auto block"
                  />
               </div>
            </div>

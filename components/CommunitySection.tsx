@@ -21,7 +21,7 @@ const CommunitySection = () => {
         <div className="mt-6 flex w-full flex-col flex-wrap justify-center gap-3 md:flex-row md:gap-6 xl:mt-12 px-4 md:px-0">
           <PricingCard
             title="MVP Development"
-            price="$2,500"
+            price="$3,000"
             features={[
               "21-day delivery timeline",
               "Full product design",
@@ -34,7 +34,7 @@ const CommunitySection = () => {
           />
           <PricingCard
             title="Growth Retainer Plan"
-            price="$3,000"
+            price="$4,000"
             features={[
               "Ongoing development support",
               "Feature iterations",

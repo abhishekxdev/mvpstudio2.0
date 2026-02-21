@@ -53,8 +53,17 @@ const Hero = () => {
 
         {/* Title */}
         <h1 className="text-[32px] leading-[40px] font-550 -tracking-[0.022em] text-ln-gray-900 text-center md:text-[45px] md:leading-[53px] xl:text-[74px] xl:leading-[85px] mt-3 md:mt-5 w-full">
-          <div className="overflow-hidden flex justify-center">
-            <Typewriter words={["MVP Development", "Product Design", "Launch Ready"]} />
+          <div className="flex justify-center">
+            <span className="inline-grid">
+              {["MVP Development", "Product Design", "Launch Ready"].map((word) => (
+                <span key={word} className="col-start-1 row-start-1 invisible" aria-hidden="true">
+                  {word}
+                </span>
+              ))}
+              <span className="col-start-1 row-start-1">
+                <Typewriter words={["MVP Development", "Product Design", "Launch Ready"]} />
+              </span>
+            </span>
           </div>
           for ambitious founders
         </h1>

@@ -20,13 +20,14 @@ const ProjectCard = ({ title, image, priority = false, index = 0 }) => {
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}
     >
-      <div className="aspect-video w-full overflow-hidden bg-gray-100 relative">
+      <div className="w-full overflow-hidden bg-gray-100">
         <Image
           src={image}
           alt={title}
-          fill
+          width={1200}
+          height={800}
           priority={priority}
-          className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+          className="w-full h-auto block transition-transform duration-700 ease-out group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
@@ -39,38 +40,44 @@ const ProjectsPage = () => {
     {
       title: "ProjectSync",
       description: "A comprehensive project management platform designed to streamline team collaboration and boost productivity. Features real-time updates, task tracking, and intuitive workflow management.",
-      image: "/projectsync1.png",
+      image: "/project1.png",
       tags: ["Web App", "Collaboration", "SaaS"]
     },
-     {
-      title: "CRMDashbpard",
+    {
+      title: "CRM Dashboard",
       description: "A comprehensive project management platform designed to streamline team collaboration and boost productivity. Features real-time updates, task tracking, and intuitive workflow management.",
-      image: "/Hero Section@3x.png",
+      image: "/project2.png",
       tags: ["Web App", "Collaboration", "SaaS"]
     },
     {
       title: "MusicFlow",
       description: "Modern music streaming application with personalized playlists, social features, and high-quality audio playback. Built for music lovers who want a seamless listening experience.",
-      image: "/music1.jpg",
+      image: "/project3.png",
       tags: ["Mobile", "Entertainment", "Audio"]
     },
     {
       title: "TalentMind",
       description: "AI-powered recruitment platform that connects top talent with leading companies. Features intelligent matching, automated screening, and comprehensive candidate management.",
-      image: "/talentmind.jpg",
+      image: "/project4.png",
       tags: ["Web App", "AI", "HR Tech"]
     },
     {
       title: "CollabHub",
       description: "Real-time collaboration workspace for distributed teams. Includes video conferencing, document sharing, and project management tools all in one seamless platform.",
-      image: "/collab1.jpg",
+      image: "/project5.png",
       tags: ["Web App", "Collaboration", "Remote Work"]
     },
     {
       title: "Analytics Dashboard",
       description: "Powerful business intelligence dashboard with real-time data visualization, custom reporting, and actionable insights. Helps teams make data-driven decisions faster.",
-      image: "/dashboard1.jpg",
+      image: "/project6.png",
       tags: ["Web App", "Analytics", "Business Intelligence"]
+    },
+    {
+      title: "FinTrack",
+      description: "Smart financial tracking application with automated expense categorization, budget planning, and insightful spending analytics to help users manage their finances effortlessly.",
+      image: "/project7.png",
+      tags: ["Web App", "FinTech", "Analytics"]
     }
   ];
 
