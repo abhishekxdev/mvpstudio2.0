@@ -55,7 +55,7 @@ const NewsletterSection = () => {
 
           <div className="mt-8 text-center px-4">
             <p className="text-ln-paragraph-md text-ln-gray-600">
-              Still have questions? <a href="#" className="font-medium text-ln-gray-900 hover:text-ln-orange transition">Get in touch</a>
+              Still have questions? <a href="https://calendly.com/mvpstudio-in/30min" target="_blank" rel="noopener noreferrer" className="font-medium text-ln-gray-900 hover:text-ln-orange transition">Get in touch</a>
             </p>
           </div>
         </div>

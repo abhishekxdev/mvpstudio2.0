@@ -47,16 +47,16 @@ const CommunitySection = () => {
             featured
           />
           <PricingCard
-            title="Custom Plan"
-            price="Let's discuss"
+            title="Landing Pages"
+            price="$1,000"
             features={[
-              "Tailored to your needs",
-              "Flexible scope & timeline",
-              "Dedicated team",
-              "Enterprise solutions",
-              "Full-service package"
+              "High-converting design",
+              "Mobile responsive",
+              "SEO optimized",
+              "Fast turnaround",
+              "Ready to launch"
             ]}
-            buttonText="Book a Call"
+            buttonText="Get Started"
             href="https://calendly.com/mvpstudio-in/30min"
           />
         </div>

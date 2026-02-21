@@ -40,10 +40,10 @@ interface TemplateTabProps {
 }
 
 const TemplateTab = ({ active = false, text, soon = false }: TemplateTabProps) => (
-  <button type="button" className={`flex h-10 md:h-12 items-center gap-2 md:gap-3 rounded-[12px] md:rounded-[15px] px-2 md:px-3 transition duration-200 ease-nc text-xs md:text-sm ${active ? 'bg-ln-gray-100' : 'bg-ln-gray-25 ring-1 ring-ln-gray-100'} ${soon ? 'opacity-50 cursor-not-allowed' : ''}`}>
+  <div className={`flex h-10 md:h-12 items-center gap-2 md:gap-3 rounded-[12px] md:rounded-[15px] px-2 md:px-3 text-xs md:text-sm ${active ? '' : 'bg-ln-gray-25 ring-1 ring-ln-gray-100'} ${soon ? 'opacity-50' : ''}`}>
     <span className="pr-0.5 md:pr-1 text-ln-label-sm md:text-ln-label-md text-ln-gray-800 whitespace-nowrap">{text}</span>
     {soon && <div className="flex h-4 md:h-5 items-center rounded-full bg-ln-gray-100 px-1 md:px-1.5 text-[10px] md:text-ln-subheading-xs text-ln-gray-500 -ml-1 md:-ml-2.5">SOON</div>}
-  </button>
+  </div>
 );
 
 export default TemplatesSection;
