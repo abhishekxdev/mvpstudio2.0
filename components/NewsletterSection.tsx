@@ -29,9 +29,26 @@ const faqs = [
   }
 ];
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+
 const NewsletterSection = () => {
   return (
     <div id="newsletter" className="pt-10 bleed-ln-gray-200 bleed-border-t md:pt-14 xl:pt-[70px] xl:bleed-none pb-16 md:pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center w-full px-4">
           <div className="flex h-7 items-center gap-1.5 rounded-[9px] bg-ln-gray-0 pl-1.5 pr-2.5 text-ln-label-sm text-ln-gray-700 shadow-ln-subheading xl:h-8 xl:pl-2 xl:pr-3">
@@ -40,9 +57,9 @@ const NewsletterSection = () => {
             </svg>
             FAQ
           </div>
-          <h4 className="mt-4 text-[28px] leading-[36px] font-550 -tracking-[0.02em] text-ln-gray-900 text-center md:text-ln-title-h4 xl:text-[32px] xl:leading-[40px] xl:-tracking-[0.028em] w-full">
+          <h2 className="mt-4 text-[28px] leading-[36px] font-550 -tracking-[0.02em] text-ln-gray-900 text-center md:text-ln-title-h4 xl:text-[32px] xl:leading-[40px] xl:-tracking-[0.028em] w-full">
             Frequently Asked Questions
-          </h4>
+          </h2>
           <p className="mt-2 text-ln-paragraph-md text-ln-gray-600 text-center xl:text-ln-paragraph-lg max-w-2xl w-full">
             Everything you need to know about <span className="font-medium text-ln-gray-800">MVP development</span> and our <span className="font-medium text-ln-gray-800">process</span>.
           </p>
@@ -55,7 +72,7 @@ const NewsletterSection = () => {
 
           <div className="mt-8 text-center px-4">
             <p className="text-ln-paragraph-md text-ln-gray-600">
-              Still have questions? <a href="https://calendly.com/mvpstudio-in/30min" target="_blank" rel="noopener noreferrer" className="font-medium text-ln-gray-900 hover:text-ln-orange transition">Get in touch</a>
+              Still have questions? <a href="https://calendly.com/mvpstudio-dev/30min" target="_blank" rel="noopener noreferrer" className="font-medium text-ln-gray-900 hover:text-ln-orange transition">Get in touch</a>
             </p>
           </div>
         </div>

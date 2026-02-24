@@ -34,15 +34,19 @@ export default function Home() {
                <img src="https://alignui.com/images/landing/dot-gray-25.png" width="9" height="9" alt="" className="absolute z-30 min-h-[9px] min-w-[9px] left-0 top-1/2 -translate-x-1/2 -translate-y-1/2" />
                <img src="https://alignui.com/images/landing/dot-gray-25.png" width="9" height="9" alt="" className="absolute z-30 min-h-[9px] min-w-[9px] right-0 top-1/2 -translate-y-1/2 translate-x-1/2" />
              </div>
-             <img src="/mvplogo.png" alt="" width="34" height="26" className="shrink-0 object-contain" />
+             <img src="/mvplogo.png" alt="" width="34" height="26" className="shrink-0 object-contain" aria-hidden="true" />
              <div className="relative h-px w-full flex-1 bg-ln-gray-200">
                <img src="https://alignui.com/images/landing/dot-gray-25.png" width="9" height="9" alt="" className="absolute z-30 min-h-[9px] min-w-[9px] left-0 top-1/2 -translate-x-1/2 -translate-y-1/2" />
                <img src="https://alignui.com/images/landing/dot-gray-25.png" width="9" height="9" alt="" className="absolute z-30 min-h-[9px] min-w-[9px] right-0 top-1/2 -translate-y-1/2 translate-x-1/2" />
              </div>
           </div>
 
-          <Features />
-          <CustomizationSection />
+          <section aria-label="Why Choose MVP Studio">
+            <Features />
+          </section>
+          <section aria-label="Our Services">
+            <CustomizationSection />
+          </section>
 
           <div className="mx-auto flex h-8 w-full max-w-[596px] items-center justify-center gap-6 px-4 my-16 hidden md:flex xl:my-24">
              <div className="relative h-px w-full flex-1 bg-ln-gray-200">
@@ -56,9 +60,11 @@ export default function Home() {
              </div>
           </div>
 
-          <TemplatesSection />
+          <section aria-label="Our Portfolio">
+            <TemplatesSection />
+          </section>
 
-          <div className="mx-auto flex h-8 w-full max-w-[596px] items-center justify-center gap-6 px-4 mb-16 mt-8 hidden md:flex xl:my-24">
+          <div className="mx-auto flex h-8 w-full max-w-[596px] items-center justify-center gap-6 px-4 mb-16 mt-8 hidden md:flex xl:my-24" aria-hidden="true">
              <div className="relative h-px w-full flex-1 bg-ln-gray-200">
                <img src="https://alignui.com/images/landing/dot-gray-25.png" width="9" height="9" alt="" className="absolute z-30 min-h-[9px] min-w-[9px] left-0 top-1/2 -translate-x-1/2 -translate-y-1/2" />
                <img src="https://alignui.com/images/landing/dot-gray-25.png" width="9" height="9" alt="" className="absolute z-30 min-h-[9px] min-w-[9px] right-0 top-1/2 -translate-y-1/2 translate-x-1/2" />
@@ -70,9 +76,11 @@ export default function Home() {
              </div>
           </div>
 
-          <CommunitySection />
+          <section aria-label="Pricing Plans">
+            <CommunitySection />
+          </section>
 
-          <div className="mx-auto flex h-8 w-full max-w-[596px] items-center justify-center gap-6 px-4 mb-16 mt-8 hidden md:flex xl:my-24">
+          <div className="mx-auto flex h-8 w-full max-w-[596px] items-center justify-center gap-6 px-4 mb-16 mt-8 hidden md:flex xl:my-24" aria-hidden="true">
              <div className="relative h-px w-full flex-1 bg-ln-gray-200">
                <img src="https://alignui.com/images/landing/dot-gray-25.png" width="9" height="9" alt="" className="absolute z-30 min-h-[9px] min-w-[9px] left-0 top-1/2 -translate-x-1/2 -translate-y-1/2" />
                <img src="https://alignui.com/images/landing/dot-gray-25.png" width="9" height="9" alt="" className="absolute z-30 min-h-[9px] min-w-[9px] right-0 top-1/2 -translate-y-1/2 translate-x-1/2" />
@@ -84,8 +92,12 @@ export default function Home() {
              </div>
           </div>
 
-          <TestimonialsSection />
-          <NewsletterSection />
+          <section aria-label="Client Testimonials">
+            <TestimonialsSection />
+          </section>
+          <section aria-label="Frequently Asked Questions">
+            <NewsletterSection />
+          </section>
         </main>
         <Footer />
       </div>

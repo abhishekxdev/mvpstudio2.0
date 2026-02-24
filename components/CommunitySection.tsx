@@ -30,7 +30,7 @@ const CommunitySection = () => {
               "Perfect for launching fast"
             ]}
             buttonText="Get Started"
-            href="https://calendly.com/mvpstudio-in/30min"
+            href="https://calendly.com/mvpstudio-dev/30min"
           />
           <PricingCard
             title="Growth Retainer Plan"
@@ -43,7 +43,7 @@ const CommunitySection = () => {
               "Monthly strategy calls"
             ]}
             buttonText="Contact Us"
-            href="https://calendly.com/mvpstudio-in/30min"
+            href="https://calendly.com/mvpstudio-dev/30min"
             featured
           />
           <PricingCard
@@ -57,7 +57,7 @@ const CommunitySection = () => {
               "Ready to launch"
             ]}
             buttonText="Get Started"
-            href="https://calendly.com/mvpstudio-in/30min"
+            href="https://calendly.com/mvpstudio-dev/30min"
           />
         </div>
       </div>

@@ -84,8 +84,8 @@ const ProjectsPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
-      <div className="container mx-auto px-4 pt-24 md:pt-32 pb-20">
-        <div className="text-center mb-12 md:mb-16">
+      <main className="container mx-auto px-4 pt-24 md:pt-32 pb-20">
+        <header className="text-center mb-12 md:mb-16">
           <h1 className="text-[32px] leading-[40px] font-550 -tracking-[0.022em] text-ln-gray-900 md:text-[45px] md:leading-[53px] xl:text-[74px] xl:leading-[85px] mb-4 md:mb-6">
             Our Work
           </h1>
@@ -93,15 +93,15 @@ const ProjectsPage = () => {
             Explore our portfolio of successful projects. From MVPs to full-scale applications,
             we've helped founders bring their visions to life.
           </p>
-        </div>
+        </header>
 
-        <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
+        <section aria-label="Project gallery" className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
           {projects.map((project, idx) => (
             <ProjectCard key={idx} {...project} priority={idx === 0} index={idx} />
           ))}
-        </div>
+        </section>
 
-        <div className="mt-16 md:mt-20 text-center">
+        <section className="mt-16 md:mt-20 text-center" aria-label="Call to action">
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-[28px] leading-[36px] font-550 -tracking-[0.02em] text-ln-gray-900 md:text-[32px] md:leading-[40px] mb-3 md:mb-4">
               Ready to Start Your Project?
@@ -110,7 +110,7 @@ const ProjectsPage = () => {
               Let's discuss how we can help bring your vision to life in just 21 days.
             </p>
             <a
-              href="https://calendly.com/mvpstudio-in/30min"
+              href="https://calendly.com/mvpstudio-dev/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-black text-white rounded-[13px] px-6 py-3 text-ln-label-sm font-medium hover:bg-black/90 transition-colors"
@@ -121,8 +121,8 @@ const ProjectsPage = () => {
               </svg>
             </a>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
   );
 };

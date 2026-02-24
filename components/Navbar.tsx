@@ -13,7 +13,7 @@ const Navbar = () => {
           <header className="relative z-10 flex h-14 w-full items-center justify-between gap-4 rounded-t-2xl bg-ln-gray-25 px-4 lg:h-auto lg:w-auto lg:justify-center lg:rounded-3xl lg:bg-ln-gray-0 lg:py-1.5 lg:px-6 lg:shadow-[0_4px_12px_rgba(0,0,0,0.08),0_8px_24px_rgba(0,0,0,0.06),inset_0_-1px_0_rgba(0,0,0,0.05)] lg:border lg:border-gray-100/50">
             <div className="flex items-center gap-2.5">
               <a className="focus:outline-none" href="/">
-                <img src="/mvplogo.png" alt="" className="h-6 w-auto object-contain" />
+                <img src="/mvplogo.png" alt="MVP Studio" className="h-6 w-auto object-contain" />
               </a>
             </div>
 
@@ -26,7 +26,7 @@ const Navbar = () => {
             </nav>
 
             <div className="hidden items-center gap-4 lg:flex">
-              <a href="https://calendly.com/mvpstudio-in/30min" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-black px-4 py-2 text-ln-label-sm font-medium text-white transition duration-200 ease-linear hover:bg-black/90">
+              <a href="https://calendly.com/mvpstudio-dev/30min" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-black px-4 py-2 text-ln-label-sm font-medium text-white transition duration-200 ease-linear hover:bg-black/90">
                 Book A Call
               </a>
             </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
           <a href="/#pricing" className="text-sm font-medium py-2 border-b border-ln-gray-100 w-full text-center" onClick={() => setIsOpen(false)}>Plans</a>
           <a href="/#testimonials" className="text-sm font-medium py-2 border-b border-ln-gray-100 w-full text-center" onClick={() => setIsOpen(false)}>Testimonials</a>
           <a href="/#newsletter" className="text-sm font-medium py-2 border-b border-ln-gray-100 w-full text-center" onClick={() => setIsOpen(false)}>Contact</a>
-          <a href="https://calendly.com/mvpstudio-in/30min" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-black px-4 py-2.5 text-center text-sm font-medium text-white transition duration-200 ease-linear hover:bg-black/90 w-full">
+          <a href="https://calendly.com/mvpstudio-dev/30min" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-black px-4 py-2.5 text-center text-sm font-medium text-white transition duration-200 ease-linear hover:bg-black/90 w-full">
             Book A Call
           </a>
         </div>
