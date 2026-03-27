@@ -5,7 +5,6 @@ import Features from '@/components/Features';
 import CustomizationSection from '@/components/CustomizationSection';
 import TemplatesSection from '@/components/TemplatesSection';
 import CommunitySection from '@/components/CommunitySection';
-import TestimonialsSection from '@/components/TestimonialsSection';
 import NewsletterSection from '@/components/NewsletterSection';
 import Footer from '@/components/Footer';
 
@@ -92,9 +91,6 @@ export default function Home() {
              </div>
           </div>
 
-          <section aria-label="Client Testimonials">
-            <TestimonialsSection />
-          </section>
           <section aria-label="Frequently Asked Questions">
             <NewsletterSection />
           </section>
