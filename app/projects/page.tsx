@@ -110,7 +110,7 @@ const ProjectsPage = () => {
               Let's discuss how we can help bring your vision to life in just 21 days.
             </p>
             <a
-              href="https://calendly.com/mvpstudio-dev/30min"
+              href="https://cal.com/mvpstudio.in/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-black text-white rounded-[13px] px-6 py-3 text-ln-label-sm font-medium hover:bg-black/90 transition-colors"
