@@ -25,7 +25,7 @@ const Navbar = () => {
             </nav>
 
             <div className="hidden items-center gap-4 lg:flex">
-              <a href="https://calendly.com/mvpstudio-dev/30min" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-black px-4 py-2 text-ln-label-sm font-medium text-white transition duration-200 ease-linear hover:bg-black/90">
+              <a href="https://cal.com/mvpstudio.in/30min" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-black px-4 py-2 text-ln-label-sm font-medium text-white transition duration-200 ease-linear hover:bg-black/90">
                 Book A Call
               </a>
             </div>
@@ -46,7 +46,7 @@ const Navbar = () => {
           <a href="/projects" className="text-sm font-medium py-2 border-b border-ln-gray-100 w-full text-center" onClick={() => setIsOpen(false)}>Projects</a>
           <a href="/#pricing" className="text-sm font-medium py-2 border-b border-ln-gray-100 w-full text-center" onClick={() => setIsOpen(false)}>Plans</a>
           <a href="/#newsletter" className="text-sm font-medium py-2 border-b border-ln-gray-100 w-full text-center" onClick={() => setIsOpen(false)}>Contact</a>
-          <a href="https://calendly.com/mvpstudio-dev/30min" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-black px-4 py-2.5 text-center text-sm font-medium text-white transition duration-200 ease-linear hover:bg-black/90 w-full">
+          <a href="https://cal.com/mvpstudio.in/30min" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-black px-4 py-2.5 text-center text-sm font-medium text-white transition duration-200 ease-linear hover:bg-black/90 w-full">
             Book A Call
           </a>
         </div>
