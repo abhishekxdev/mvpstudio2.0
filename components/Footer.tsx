@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center justify-center">
             <a
-              href="https://calendly.com/mvpstudio-dev/30min"
+              href="https://cal.com/mvpstudio.in/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-ln-gray-900 px-6 py-3 text-ln-label-md text-white transition-all duration-200 hover:bg-ln-gray-800 hover:shadow-lg"
